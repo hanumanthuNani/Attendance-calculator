@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Estimator</title>
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ui container center aligned colorful-background">
+        <h1 class="ui header title">Designed by Nani Hanumanthu</h1>
+        
+        <!-- Follow and Buy Me a Coffee Buttons -->
+        <div class="ui buttons">
+            <a href="https://github.com/hanumanthuNani" target="_blank" class="ui primary button">Follow my GitHub</a>
+            <a href="https://buymeacoffee.com/nanihanuma2" target="_blank" class="ui yellow button">Buy me a coffee</a>
+        </div>
+        
+        <!-- Attendance Calculator Form -->
+        <div class="ui form segment form-container">
+            <h2 class="ui dividing header">Attendance Estimator</h2>
+            
+            <div class="field">
+                <label>Classes Attended So Far</label>
+                <input type="number" id="attended" placeholder="Enter attended classes">
+            </div>
+            <div class="field">
+                <label>Total Classes Conducted</label>
+                <input type="number" id="conducted" placeholder="Enter total conducted classes">
+            </div>
+
+            <!-- Calculate Attendance Buttons -->
+            <button class="ui purple button" onclick="calculateCurrentAttendance()">Calculate Current Attendance</button>
+            <button class="ui orange button" onclick="showOverallAttendance()">Calculate Overall Attendance</button>
+            
+            <div id="result" class="ui message hidden"></div>
+        </div>
+    </div>
+
+    <!-- Semantic UI and Custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
